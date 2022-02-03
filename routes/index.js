@@ -9,18 +9,12 @@ router.get('/', indexController.home);
 router.get('/projects',indexController.projects);
 
 /* GET services page. */
-router.get('/services', function(req, res, next) {
-  res.render('index', { title: 'Services' });
-});
+router.get('/services',indexController.services);
 
 /* GET about me page. */
-router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'About Me' });
-});
+router.get('/about',indexController.about);
 
 /* GET contact me page. */
-router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact me!' });
-});
+router.get('/contact',indexController.contact);
 
 module.exports = router;
