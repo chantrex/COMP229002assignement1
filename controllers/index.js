@@ -7,13 +7,13 @@ exports.projects =  function(req, res, next) {
 }
 
 exports.services =   function(req, res, next) {
-    res.render('index', { title: 'Services' });
+    res.render('services', { title: 'Services' });
 }
 
 exports.about =  function(req, res, next) {
-    res.render('index', { title: 'About Me' });
+    res.render('about', { title: 'About Me' });
 } 
 
 exports.contact =  function(req, res, next) {
-    res.render('index', { title: 'Contact me!' });
+    res.render('contact', { title: 'Contact me!' });
 }  
